@@ -1,0 +1,238 @@
+.mentorProfileTab {
+  padding: 3rem;
+  gap: 3rem;
+  margin-top: 3rem;
+  font-family: "Poppins", cursive;
+  border-radius: 3rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.personalInfoVisual,
+.personalInfoText,
+.aboutAndWorkSection {
+  width: 100%;
+  padding: 3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 2rem;
+  background-color: #fff;
+}
+
+.personalInfoVisual {
+  width: 50%;
+}
+
+.secondRow {
+  flex-direction: column;
+  gap: 3rem;
+  width: 50%;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+}
+
+.personalInfoVisual {
+  position: relative;
+  padding-top: 0;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.personalMentorAvatar {
+  height: 70%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.personalInfoVisualTextContainer {
+  flex-direction: column;
+  width: 100%;
+}
+
+.addPhotoBtn {
+  margin-top: 0.5rem;
+  color: blueviolet;
+  position: absolute;
+  top: 57.5%;
+  right: 12.5%;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.addPhotoBtn:hover {
+  transform: scale(1.2);
+}
+
+.addPhotoBtn:active {
+  transform: scale(0.9);
+}
+
+.mentorStatusNameAndMajorSection {
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  width: 100%;
+}
+
+.mentorStatus {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.mentorNameAndMajor {
+  flex-direction: column;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.mentorEmailPhoneSection,
+.mentorRatingSection {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.mentorRatingSection div {
+  flex-direction: column;
+}
+
+.mentorRatingSection svg {
+  color: gold;
+  font-size: 1.75rem;
+}
+
+.totalReviews {
+  font-size: 0.8rem;
+  text-align: center;
+  font-style: italic;
+  color: tomato;
+  text-align: center;
+}
+
+.profileEditBtn {
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  font-family: "Oswald", sans-serif;
+  width: 50%;
+  height: 3rem;
+  background: linear-gradient(45deg, blueviolet, #0bda51);
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  color: #fff;
+  transition: all ease-out 0.3s;
+}
+
+.profileEditBtn:hover {
+  background: linear-gradient(225deg, blueviolet, #0bda51);
+  transform: scale(1.1);
+  font-size: 1.75rem;
+}
+
+.profileEditBtn:active {
+  transform: scale(0.9);
+}
+
+.personalInfoText {
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.personalInfoText h2 {
+  text-align: center;
+  border-bottom: #9897a9 1px solid;
+  font-weight: bold;
+  width: 100%;
+  font-size: 1.75rem;
+}
+
+.ageSection,
+.schoolSection,
+.universitySection,
+.countrySection,
+.workSection {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  border-bottom: #dcdcdc 1px solid;
+}
+
+.label {
+  font-weight: 600;
+  color: blueviolet;
+  font-size: 1.5rem;
+}
+
+.aboutAndWorkSection {
+  flex-grow: 1;
+}
+
+.aboutAndWorkSection .label:last-of-type {
+  margin-top: 1rem;
+}
+
+.aboutParagraph {
+  font-size: 1.125rem;
+}
+
+@media (max-width: 1630px) {
+  .personalMentorAvatar {
+    height: 60%;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 1450px), (max-height: 1100px) {
+  .personalMentorAvatar {
+    height: 50%;
+    margin-top: 4rem;
+  }
+
+  .mentorEmailPhoneSection,
+  .mentorRatingSection {
+    font-size: 1rem;
+  }
+
+  .label {
+    font-size: 1rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .aboutParagraph {
+    font-size: 1rem;
+  }
+
+  @media (max-height: 980px) {
+    .ageSection,
+    .schoolSection,
+    .universitySection,
+    .countrySection,
+    .workSection {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    .personalInfoVisual,
+    .personalInfoText,
+    .aboutAndWorkSection {
+      padding: 2rem;
+    }
+  }
+}

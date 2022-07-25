@@ -1,0 +1,70 @@
+.registrationPage {
+  position: relative;
+  display: grid;
+  height: 100%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.mentorsContainer,
+.mentisContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mentorsContainer h2,
+.mentisContainer h2 {
+  font-weight: 300;
+  font-family: "Lobster", cursive;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.mentorsContainer {
+  height: 100%;
+  background-color: #6cb4ee;
+}
+
+.mentisContainer {
+  background-color: #0bda51;
+  height: 100%;
+}
+
+.mentisContentContainer,
+.mentorsContentContainer {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 590px;
+  width: 580px;
+  padding: 1rem;
+  border-radius: 20px;
+  transition: all 1s ease;
+}
+
+.mentisContentContainer:hover,
+.mentorsContentContainer:hover {
+  border: 5px solid #fff;
+  transform: scale(1.2);
+}
+
+.mentisContentContainer:active,
+.mentorsContentContainer:active {
+  transform: scale(0.95);
+}
+
+.mentorsContentContainer:hover h2 {
+  color: #6cb4ee;
+  box-shadow: inset 390px 0 0 0 #fff;
+}
+
+.mentisContentContainer:hover h2 {
+  color: #0bda51;
+  box-shadow: inset 390px 0 0 0 #fff;
+}

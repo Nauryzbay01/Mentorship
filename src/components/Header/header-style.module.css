@@ -1,0 +1,124 @@
+.header {
+  font-size: 2rem;
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.headerLogo {
+  padding-left: 1rem;
+  width: 30%;
+}
+
+.headerLogo img {
+  margin: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 12rem;
+  width: 10rem;
+}
+
+.btnSection {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.btnSectionLink {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.7s;
+}
+
+.btnSectionLink:hover {
+  background-color: #0bda51;
+}
+
+.btnSectionLink:active {
+  transform: scale(0.8);
+}
+
+.btnSectionAuth {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnSectionAuthBtn {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.7s;
+}
+
+.btnSectionAuthBtn:active {
+  transform: scale(0.8);
+}
+
+.btnSectionAuthBtn:first-of-type:hover {
+  background-color: #6cb4ee;
+}
+.btnSectionAuthBtn:last-of-type:hover {
+  background-color: #00308f;
+}
+
+.btnSectionProfileBtn {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all ease 0.7s;
+}
+
+.btnSectionProfileBtn:hover {
+  background-color: #0bda51;
+}
+
+.btnSectionProfileLogo {
+  color: #00308f;
+}
+
+.btnSectionLogoutBtn {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all ease 0.7s;
+}
+
+.btnSectionLogoutBtn:hover {
+  background-color: tomato;
+}
+
+.btnSectionLogoutBtn:hover .btnSectionLogoutLogo {
+  color: red;
+}
+
+.btnSectionLogoutLogo {
+  color: tomato;
+}
+
+.headerLink {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 1530px) {
+  .btnSectionAuth {
+    width: 25%;
+  }
+}

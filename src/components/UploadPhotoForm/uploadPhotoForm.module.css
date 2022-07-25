@@ -1,0 +1,61 @@
+.uploadPhotoForm {
+  color: #fff;
+  border-radius: 20px;
+  width: 400px;
+  height: 400px;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  font-size: 2rem;
+  color: #fff;
+  background: none;
+  border: none;
+}
+
+.closeBtn:hover {
+  transform: scale(1.2);
+}
+
+.closeBtn:active {
+  transform: scale(0.9);
+}
+
+.uploadBtn {
+  margin-top: 0.5rem;
+  width: 50%;
+  padding: 0.5rem;
+  color: #fff;
+  background: none;
+  font-size: 1rem;
+  border: 2px solid #fff;
+  transition: 0.3s all ease;
+}
+
+.uploadBtn:hover {
+  transform: scale(1.1);
+}
+
+.uploadBtn:active {
+  transform: scale(0.9);
+}
+
+.label {
+  text-decoration: underline;
+}
+
+.label:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,44 @@
+.fancyBack {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.square {
+  transform: rotate(60deg);
+}
+
+.smallSquare {
+  border-radius: 2.5rem;
+  position: absolute;
+  right: -1vw;
+  bottom: 57.5vh;
+  background: linear-gradient(45deg, #27d62e, #a6b186);
+  width: 12.5vw;
+  aspect-ratio: 1/1;
+}
+
+.largeSquare {
+  border-radius: 4rem;
+  position: absolute;
+  right: -10vw;
+  bottom: -5vh;
+  background: linear-gradient(45deg, blueviolet, #0bda51);
+  aspect-ratio: 1/1;
+  width: 25vw;
+}
+
+.mediumSquare {
+  border-radius: 2.5rem;
+  aspect-ratio: 1/1;
+  position: absolute;
+  right: 30vw;
+  bottom: -15vh;
+  background: linear-gradient(60deg, #03ac13, blueviolet);
+  width: 20vw;
+}
